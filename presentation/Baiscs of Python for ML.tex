@@ -1,0 +1,392 @@
+
+\documentclass{bredelebeamer}
+
+
+% suppress navigation bar
+\beamertemplatenavigationsymbolsempty
+
+\mode<presentation>
+{
+  %\usetheme{bunsen}
+  \setbeamercovered{transparent}
+  \setbeamertemplate{items}[circle]
+}
+
+\beamertemplatenavigationsymbolsempty
+\usepackage{color}
+\definecolor{uipoppy}{RGB}{225, 64, 5}
+\definecolor{uipaleblue}{RGB}{96,123,139}
+\definecolor{uiblack}{RGB}{0, 0, 0}
+
+% caption styling
+\DeclareCaptionFont{uiblack}{\color{uiblack}}
+\DeclareCaptionFont{uipoppy}{\color{uipoppy}}
+\captionsetup{labelfont={uipoppy},textfont=uiblack}
+\include{macros}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title[PhD]{\textbf{Intro to Python for Data Science \\ Arusha Tech}}
+% Titre du diaporama
+
+\subtitle{\textbf{} }
+% Sous-titre optionnel
+
+\author{ \href{https://sambaiga.github.io/ }{\href{https://sambaiga.github.io/}{Anthony FAUSTINE} }}
+
+
+
+
+
+\date{August 2017}
+% Optionnel. La date, généralement celle du jour de la conférence
+
+\subject{Sujet de votre diaporama}
+% C'est utilisé dans les métadonnes du PDF
+
+
+
+\logo{
+	%\includegraphics[scale=0.1]{images/logo.pdf}
+}
+\hypersetup{
+	pdfauthor = {Anthony Faustine: sambaiga@gmail.com},
+	pdfsubject = {},
+	pdfkeywords = {},
+	pdfmoddate= {},
+	pdfcreator = {}
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+
+
+
+\AtBeginSection[] { \begin{frame} %
+		<beamer> \frametitle{Outline} \setcounter{tocdepth}{2} \tableofcontents[currentsection, sectionstyle=show/shaded,hideallsubsections ] \end{frame} }
+
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\section{Introduction}
+
+\begin{frame}{Learning goal}
+\begin{itemize}
+	\item Understand python programming language and different python libraries for data science.
+	\item Explore Python language fundamentals, including basic syntax, variables, control flow, data structure and functions.
+	\item Build Numpy arrays, and perform basic and some linear algebra calculations.
+	\item Create and customize plots  using matplotlib.
+\end{itemize}
+\end{frame}
+\begin{frame}{Presenter Bio}
+\begin{itemize}
+\item PhD student at Nelson Mandela African Institution of Science and Technology, 
+\item \textbf{Research:}  Applied machine learning and signal processing for computational sustainability.
+\begin{itemize}
+	\item Develop probabilistic-deep learning algorithm (Hybrid HMM-DNN) for energy dis-aggregation problem.
+\end{itemize}	
+\item Co-founder \href{https://pythontz.github.io/}{Pythontz}
+\item Assistant Lecturer (UDOM), Researcher (Vicres, \href{https://hakikidawa.github.io/}{Hakikidawa}).
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Pythontz}
+\begin{figure}
+\centering
+\includegraphics[scale=0.40]{../image/pythontz.jpg}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Pythontz}
+\emph{About Pythontz}
+\begin{itemize}
+	\item A postive peer learning community for interested Python users in Tanzania.
+\end{itemize}
+\textbf{Vision}
+\begin{itemize}
+	\item To create a vibrant and diverse python community in Tanzania.
+\end{itemize}
+\textbf{Mission}
+\begin{itemize}
+	\item To foster the application of python programming across industries, learning centers, schools and community in Tanzania.
+\end{itemize}
+\end{frame}
+\section{Python}
+
+\begin{frame}\frametitle{Introduction}
+\framesubtitle{What is Python ?}
+A very popular general-purpose programming language.
+\begin{itemize}
+\item Open source general-purpose language
+\item Dynamically semantics (rather than statically typed like Java or C/C++)
+\item Interpreted (rather than compiled like Java or C/C++)
+\item Object Oriented, 
+\end{itemize}
+\end{frame}	
+
+\begin{frame}\frametitle{What can you use Python for?}
+
+\begin{itemize}
+\item Web development (\href{https://www.djangoproject.com/}{Django})
+\item Web Scraping (\href{https://www.djangoproject.com/}{Beautiful Soup})
+\item Scripting Language.
+\item Scientific programming and Numeric Computing.
+\item Automation and Embedded Sytstem.
+\item Desktop GUIs and 3D modelling. 
+\end{itemize}
+\end{frame}	
+	
+\begin{frame}\frametitle{But Why Python ?}
+\begin{multicols}{2}
+\begin{figure}[h]
+		\includegraphics[scale=0.30]{../image/whypython.png}
+		\label{fig:result1}
+		\caption{Jake VanderPlas PyCon 2017}
+\end{figure}
+\columnbreak
+\begin{itemize}
+	\item Python is a “teaching language”
+	\item ....created to “bridge the gap between the shell and C
+	\item  “never intended. . . to be the primary language for programmers.”
+\end{itemize}
+
+\end{multicols}	
+\end{frame}	
+
+\begin{frame}{Why is Python such an effective tool in
+science?}
+\begin{enumerate}[<+>]
+	\item Interoperability with Other Languages: You can use it in the shell on microtasks, or interactively, or in scripts, or build enterprise software with GUIs.
+	\item “Batteries Included” + Third-Party Modules: Python has built-in libraries and third-party liabraies for nearly everything.
+	\item Simplicity \& Dynamic Nature: You can run your Python code on any architecture.	
+	\item Open ethos well-fit to science: Easy to reproduce results with python	
+	\item Python is the future of Machine Learning and AI.
+\end{enumerate}
+\begin{center}	
+\textit{Jake VanderPlas PyCon 2017}
+\end{center}
+\end{frame}
+
+\begin{frame}{Why is Python such an effective tool for Data Science}
+\begin{enumerate}[<+>]
+	\item Very rich scientific computing libraries
+    \item All DS tasks can be performed with Python:
+    \begin{itemize} 
+  \item accessing, collecting, cleaning, analysing, visualising data 
+   \item modelling, evaluating models, integrating in prod, scaling
+  \end{itemize}
+\end{enumerate}
+\begin{center}	
+\textit{http://slides.com/utstikkar/introtopython-pythonproglanguage\#/3}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{PYTHON 2 VS. PYTHON 3}
+\begin{itemize}
+	\item 2 major versions of Python in widespread use:
+Python 2.x and Python 3.x
+\item Some features in Python 3 are not backward compatible with Python 2
+\item Some Python 2 libraries have not been updated to work with Python 3
+\item Bottom-line: there is no wrong choice, as long as all the libraries you need are supported by the version you choose.
+\item In this workshop: Python3
+\end{itemize}	
+
+\end{frame}
+
+
+
+\begin{frame}{Resource to learn Python}
+
+{\LARGE
+\href{https://simpleprogrammer.com/2017/02/15/get-started-learning-python/}{10 Resources to Get Started Learning Python}
+}
+\end{frame}
+
+	
+\section{Data Science}
+\begin{frame}{What is Data science}
+\texttt{The future belongs to the companies and people that turn data into products.
+By Mike Loukides June 2, 2010}\\[0.5cm]
+\pause
+\emph{Data science:}  deals with analyzing and manipulating data to derive insights and build data products.
+\begin{itemize}
+	\item The end goal of DS $\Rightarrow$ data product:\\[0.25cm] \pause
+	 \alert{Data product}: any tool created with the help of data to make a more informed decision.
+\end{itemize}	
+\end{frame}
+
+\begin{frame}{Data science vs Machine learning}
+
+\emph{Machine learning:}  a set of algorithms that learn from data in order to make predictions or inference.
+\begin{itemize}
+	\item Data Science is the real-world application of machine learning, with the goal of creating data products.
+\end{itemize}	
+\end{frame}
+\section{Python Packages for Data Science}
+\begin{frame}{Python’s Scientific Stack}
+\begin{figure}[h]
+		\includegraphics[scale=0.40]{../image/pythonstack.jpg}
+\end{figure}
+\end{frame}
+\begin{frame}{Jupyter}
+\emph{Jupyter}: Open-source web application for interactive and exploratory computing.
+\begin{itemize}
+\item Allows to create and share documents that contain live code, equations, visualizations and explanatory text.
+\end{itemize}
+\begin{multicols}{2}
+\begin{figure}[h]
+		\includegraphics[scale=0.30]{../image/jupyter.png}
+		\label{fig:result1}
+\end{figure}
+\begin{itemize}
+	\item It is a platform for Data Science at scale.
+	\item Covers all the life-cycle of scientific ideas:ideas to publications.
+	\item \href{https://try.jupyter.org/}{Demo}
+\end{itemize}
+
+\end{multicols}	
+\end{frame}	
+
+
+\begin{frame}{Numpy and Sci-py}
+\begin{multicols}{2}
+\href{http://www.numpy.org/}{\emph{Numpy}}: the fundamental Python package for scientific computing.
+\begin{figure}[h]
+		\includegraphics[scale=0.30]{../image/numpy.jpg}
+		\label{fig:result1}
+\end{figure}
+
+\begin{itemize}
+	\item Provide high-performance vector, matrix and higher-dimensional data structures.
+	\item Offers Matlab-ish capabilities within Python.
+\end{itemize}
+\href{https://www.scipy.org/}{\emph{Sci-py}}: Collections of high level mathematical operations
+\begin{figure}[h]
+		\includegraphics[scale=0.30]{../image/scipy.jpg}
+		\label{fig:result1}
+\end{figure}
+\begin{itemize}
+	\item linear algebra.
+	\item Optimization
+	\item Integration etc.
+\end{itemize}
+\end{multicols}	
+\end{frame}	
+
+
+
+\begin{frame}{statsmodels}
+statsmodels: statistical modelling toolbox 
+
+\end{frame}	
+
+
+\begin{frame}{Matplotlib}
+\href{https://matplotlib.org/}{Matplotlib} is an excellent 2D and 3D graphics library for generating scientific figures.
+ \begin{itemize}
+ 	\item It provides both a very quick way to visualize data from Python and publication-quality figures in many formats.
+ \end{itemize}
+ \begin{figure}[h]
+		\includegraphics[scale=0.40]{../image/matplotlib.png}
+		\label{fig:result1}
+\end{figure}
+Other data visualization packages: \href{https://seaborn.pydata.org/}{Seaborn} and \href{http://bokeh.pydata.org/en/latest/}{Bokeh}.
+\end{frame}
+
+\begin{frame}{Other Python Library for Visualization}
+ \begin{figure}{}
+\includegraphics[scale=0.45]{../image/searborn.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Pandas}
+\href{http://pandas.pydata.org/}{Panda}: a python package providing fast, flexible, and expressive data structures for data analysis.
+\begin{itemize}
+	\item A fundamental high-level building block for doing practical, real world data analysis in Python.
+	\item Designed to work with relational or labeled data or both.
+\end{itemize}	
+\begin{figure}[h]
+		\includegraphics[scale=0.30]{../image/pandas.png}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{Scikit-Learn for ML}
+\href{http://scikit-learn.org/}{Scikit-Learn (sklearn)} is Python's premier general-purpose machine learning library. 
+\centering
+\includegraphics[scale=0.30]{../image/sklearn.png}
+\end{frame}
+
+\begin{frame}{Python ML and AI libraries}
+\begin{multicols}{4}
+\href{https://www.tensorflow.org/}{Tensorflow}
+\begin{figure}[h]
+\includegraphics[scale=0.25]{../image/tf.jpg}
+\end{figure} 
+\href{http://deeplearning.net/software/theano/}{Theano}
+\begin{figure}[h]
+\includegraphics[scale=0.25]{../image/theano.jpg}
+\end{figure}
+\href{http://pytorch.org/}{Pytorch}
+\begin{figure}[h]
+\includegraphics[scale=0.2]{../image/pytorch.png}
+\end{figure}
+\href{https://keras.io/}{Keras}
+\begin{figure}[h]
+\includegraphics[scale=0.25]{../image/keras.png}
+\end{figure}
+\href{http://edwardlib.org/}{Edward}
+\begin{figure}[h]
+\includegraphics[scale=0.1]{../image/edward.png}
+\end{figure}
+\href{http://pymc-devs.github.io/pymc3/}{PyMC3}
+\begin{figure}[h]
+\includegraphics[scale=0.25]{../image/pymc3.png}
+\end{figure}
+\href{http://www.nltk.org/}{NLTK}
+\begin{figure}[h]
+\includegraphics[scale=0.2]{../image/nltk.jpg}
+\end{figure}
+\end{multicols}
+\end{frame}
+
+
+\begin{frame}{Data Science Platform}
+\href{https://www.kaggle.com/}{Kaggle}: helps you learn, work, and play.
+\begin{figure}[h]
+		\includegraphics[scale=0.25]{../image/kaggle1.png}
+\end{figure}
+Data set:
+\begin{itemize}
+	\item \href{http://academictorrents.com/}{Academic Torrents}
+	\item \href{https://archive.ics.uci.edu/ml/datasets.html}{UCI Machine learning repository}
+\end{itemize}	
+\end{frame}
+%-------------------------------------------------------------
+\begin{frame}
+\centering
+\emph{THANK YOU}
+\end{frame}
+
+\begin{frame}{Practical Session}
+
+\centering
+{\LARGE
+    Practical Session 
+}
+\end{frame}
+
+\end{document}
+

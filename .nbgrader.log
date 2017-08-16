@@ -1,0 +1,141 @@
+[NotebookApp | WARNING] No nbgrader_config.py file found (rerun with --debug to see where nbgrader is looking)
+[NotebookApp | INFO] Loading the validate_assignment nbgrader serverextension
+[NotebookApp | INFO] Serving notebooks from local directory: /home/sambaiga/Training and workshop/python4datascience-atc
+[NotebookApp | INFO] 0 active kernels 
+[NotebookApp | INFO] The Jupyter Notebook is running at: http://localhost:8889/?token=c3764821cd60f2ede4880d2cbcfabdd915dcb7be9e239dcc
+[NotebookApp | INFO] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[NotebookApp | CRITICAL] 
+    
+    Copy/paste this URL into your browser when you connect for the first time,
+    to login with a token:
+        http://localhost:8889/?token=c3764821cd60f2ede4880d2cbcfabdd915dcb7be9e239dcc
+[NotebookApp | INFO] Accepting one-time-token-authenticated connection from 127.0.0.1
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | ERROR] Traceback (most recent call last):
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/server_extensions/assignment_list/handlers.py", line 63, in list_released_assignments
+        assignments = lister.start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/list.py", line 129, in start
+        super(ExchangeList, self).start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 122, in start
+        self.ensure_root()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 100, in ensure_root
+        self.fail("Unwritable directory, please contact your instructor: {}".format(self.root))
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 78, in fail
+        raise ExchangeError(msg)
+    nbgrader.exchange.exchange.ExchangeError: Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+    
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | ERROR] Traceback (most recent call last):
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/server_extensions/assignment_list/handlers.py", line 63, in list_released_assignments
+        assignments = lister.start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/list.py", line 129, in start
+        super(ExchangeList, self).start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 122, in start
+        self.ensure_root()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 100, in ensure_root
+        self.fail("Unwritable directory, please contact your instructor: {}".format(self.root))
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 78, in fail
+        raise ExchangeError(msg)
+    nbgrader.exchange.exchange.ExchangeError: Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+    
+[NotebookApp | WARNING] Notebook Day_2/Data Visualization.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: 881f8a56-26a8-484a-8068-b07a0f9f5f14
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 881f8a56-26a8-484a-8068-b07a0f9f5f14
+[NotebookApp | INFO] Kernel restarted: 881f8a56-26a8-484a-8068-b07a0f9f5f14
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 881f8a56-26a8-484a-8068-b07a0f9f5f14
+[NotebookApp | INFO] Saving file at /Day_2/Data Visualization.ipynb
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | ERROR] Traceback (most recent call last):
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/server_extensions/assignment_list/handlers.py", line 63, in list_released_assignments
+        assignments = lister.start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/list.py", line 129, in start
+        super(ExchangeList, self).start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 122, in start
+        self.ensure_root()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 100, in ensure_root
+        self.fail("Unwritable directory, please contact your instructor: {}".format(self.root))
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 78, in fail
+        raise ExchangeError(msg)
+    nbgrader.exchange.exchange.ExchangeError: Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+    
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | ERROR] Traceback (most recent call last):
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/server_extensions/assignment_list/handlers.py", line 63, in list_released_assignments
+        assignments = lister.start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/list.py", line 129, in start
+        super(ExchangeList, self).start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 122, in start
+        self.ensure_root()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 100, in ensure_root
+        self.fail("Unwritable directory, please contact your instructor: {}".format(self.root))
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 78, in fail
+        raise ExchangeError(msg)
+    nbgrader.exchange.exchange.ExchangeError: Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+    
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | ERROR] Traceback (most recent call last):
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/server_extensions/assignment_list/handlers.py", line 63, in list_released_assignments
+        assignments = lister.start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/list.py", line 129, in start
+        super(ExchangeList, self).start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 122, in start
+        self.ensure_root()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 100, in ensure_root
+        self.fail("Unwritable directory, please contact your instructor: {}".format(self.root))
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 78, in fail
+        raise ExchangeError(msg)
+    nbgrader.exchange.exchange.ExchangeError: Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+    
+[NotebookApp | INFO] Kernel started: 04c66759-5d09-48cc-b018-2681aa96702f
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel 04c66759-5d09-48cc-b018-2681aa96702f
+[NotebookApp | INFO] Saving file at /Day_2/Data Visualization.ipynb
+[NotebookApp | INFO] Saving file at /Day_2/Data Visualization.ipynb
+[NotebookApp | INFO] Saving file at /Day_1/python_basics/PythonBasics.ipynb
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | ERROR] Traceback (most recent call last):
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/server_extensions/assignment_list/handlers.py", line 63, in list_released_assignments
+        assignments = lister.start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/list.py", line 129, in start
+        super(ExchangeList, self).start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 122, in start
+        self.ensure_root()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 100, in ensure_root
+        self.fail("Unwritable directory, please contact your instructor: {}".format(self.root))
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 78, in fail
+        raise ExchangeError(msg)
+    nbgrader.exchange.exchange.ExchangeError: Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+    
+[NotebookApp | WARNING] No nbgrader_config.py file found. Rerun with DEBUG log level to see where nbgrader is looking.
+[NotebookApp | CRITICAL] Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+[NotebookApp | ERROR] Traceback (most recent call last):
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/server_extensions/assignment_list/handlers.py", line 63, in list_released_assignments
+        assignments = lister.start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/list.py", line 129, in start
+        super(ExchangeList, self).start()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 122, in start
+        self.ensure_root()
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 100, in ensure_root
+        self.fail("Unwritable directory, please contact your instructor: {}".format(self.root))
+      File "/home/sambaiga/anaconda3/lib/python3.6/site-packages/nbgrader/exchange/exchange.py", line 78, in fail
+        raise ExchangeError(msg)
+    nbgrader.exchange.exchange.ExchangeError: Unwritable directory, please contact your instructor: /srv/nbgrader/exchange
+    
+[NotebookApp | WARNING] Notebook Day_2/EDA.ipynb is not trusted
+[NotebookApp | INFO] Kernel started: c1f6d687-82a2-4e52-9b44-7057bf6d9cae
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel c1f6d687-82a2-4e52-9b44-7057bf6d9cae
+[NotebookApp | INFO] Kernel restarted: c1f6d687-82a2-4e52-9b44-7057bf6d9cae
+[NotebookApp | INFO] Adapting to protocol v5.1 for kernel c1f6d687-82a2-4e52-9b44-7057bf6d9cae
+[NotebookApp | INFO] Saving file at /Day_2/Data Visualization.ipynb
+[NotebookApp | INFO] Saving file at /Day_2/EDA.ipynb
+[NotebookApp | INFO] interrupted
+[NotebookApp | CRITICAL] Shutdown confirmed
+[NotebookApp | INFO] Shutting down kernels
+[NotebookApp | INFO] Kernel shutdown: 881f8a56-26a8-484a-8068-b07a0f9f5f14
+[NotebookApp | INFO] Kernel shutdown: 04c66759-5d09-48cc-b018-2681aa96702f
+[NotebookApp | INFO] Kernel shutdown: c1f6d687-82a2-4e52-9b44-7057bf6d9cae
